@@ -182,7 +182,7 @@ DEALINGS IN THE SOFTWARE.
             </LinearGradientBrush>
         </Grid.Background>
         <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-        <Border Margin="256,100,0,30" HorizontalAlignment="Stretch" CornerRadius="15,0,0,15" Background="White" Padding="0">
+        <Border Margin="256,100,0,30" HorizontalAlignment="Stretch" CornerRadius="15,0,0,15" Background="Black" Padding="0">
             <ScrollViewer x:Name="MainContentScrollViewer" VerticalScrollBarVisibility="Auto" SizeChanged="ScrollViewer_SizeChanged">
                 <ContentControl x:Name="ChildFrame" Content="{Binding ContextViewModel}" HorizontalAlignment="Center" Width="700">
                     <ContentControl.Style>
