@@ -51,7 +51,7 @@ DEALINGS IN THE SOFTWARE.
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="0,0,0,20">
             <StackPanel>
                 <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0,20,0" VerticalScrollBarVisibility="Auto" >
-                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left">
+                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left" Foreground="White">
                         <FlowDocument.Resources>
                             <!-- This style is used to set the margins for all paragraphs in the FlowDocument to 0. -->
                             <Style TargetType="{x:Type Paragraph}">
@@ -69,7 +69,7 @@ DEALINGS IN THE SOFTWARE.
                         </local:Paragraph>
                     </FlowDocument>
                 </local:FlowDocumentScrollViewerNoMouseWheel>
-                <TextBlock Margin="36,0,36,6">Currently downloading:</TextBlock>
+                <TextBlock Foreground="White" Margin="36,0,36,6">Currently downloading:</TextBlock>
                 <ListView Grid.Row="1" ItemsSource="{Binding DownloadList}" Margin="36,0,36,24" MinHeight="66" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible" local:GridViewColumnResize.Enabled="True" >
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
@@ -115,7 +115,7 @@ DEALINGS IN THE SOFTWARE.
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="0,0,0,20">
             <StackPanel>
                 <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0,20,0" VerticalScrollBarVisibility="Auto" >
-                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left">
+                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left" Foreground="White">
                         <FlowDocument.Resources>
                             <!-- This style is used to set the margins for all paragraphs in the FlowDocument to 0. -->
                             <Style TargetType="{x:Type Paragraph}">
@@ -160,9 +160,9 @@ DEALINGS IN THE SOFTWARE.
                             <RowDefinition />
                             <RowDefinition />
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Column="0" Grid.Row="0">Producttype</TextBlock>
-                        <TextBlock Grid.Column="0" Grid.Row="1">Productcode</TextBlock>
-                        <TextBlock Grid.Column="0" Grid.Row="2">Operatorcode</TextBlock>
+                        <TextBlock Foreground="White" Grid.Column="0" Grid.Row="0">Producttype</TextBlock>
+                        <TextBlock Foreground="White" Grid.Column="0" Grid.Row="1">Productcode</TextBlock>
+                        <TextBlock Foreground="White" Grid.Column="0" Grid.Row="2">Operatorcode</TextBlock>
                         <TextBox Grid.Column="1" Grid.Row="0" Width="Auto" Margin="0,0,0,8" Text="{Binding ProductType, Mode=TwoWay}"/>
                         <TextBox Grid.Column="1" Grid.Row="1" Width="Auto" Margin="0,0,0,8" Text="{Binding ProductCode, Mode=TwoWay}"/>
                         <TextBox Grid.Column="1" Grid.Row="2" Width="Auto" Text="{Binding OperatorCode, Mode=TwoWay}"/>
@@ -173,7 +173,7 @@ DEALINGS IN THE SOFTWARE.
                     </StackPanel>
                 </Grid>
 
-                <TextBlock Margin="36,30,36,6">Search results:</TextBlock>
+                <TextBlock Foreground="White" Margin="36,30,36,6">Search results:</TextBlock>
                 <ListView Grid.Row="1" Name="SearchResultsListView" ItemsSource="{Binding SearchResultList}" Margin="36,0,36,0" MinHeight="66" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible" local:GridViewColumnResize.Enabled="True">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="{x:Type ListBoxItem}">
@@ -202,7 +202,7 @@ DEALINGS IN THE SOFTWARE.
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center">
             <StackPanel>
                 <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0,20,0" VerticalScrollBarVisibility="Auto">
-                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left">
+                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left" Foreground="White">
                         <FlowDocument.Resources>
                             <!-- This style is used to set the margins for all paragraphs in the FlowDocument to 0. -->
                             <Style TargetType="{x:Type Paragraph}">
@@ -218,7 +218,7 @@ DEALINGS IN THE SOFTWARE.
                     </FlowDocument>
                 </local:FlowDocumentScrollViewerNoMouseWheel>
                 <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,-15,20,0" VerticalScrollBarVisibility="Auto" Visibility="{Binding Path=LastStatusText, Converter={StaticResource ObjectToVisibilityConverter}}">
-                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left">
+                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left" Foreground="White">
                         <FlowDocument.Resources>
                             <!-- This style is used to set the margins for all paragraphs in the FlowDocument to 0. -->
                             <Style TargetType="{x:Type Paragraph}">

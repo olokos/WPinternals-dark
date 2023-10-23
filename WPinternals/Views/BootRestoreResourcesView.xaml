@@ -36,7 +36,7 @@ DEALINGS IN THE SOFTWARE.
     <StackPanel VerticalAlignment="Center">
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,0">
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1">
+                <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" Foreground="White">
                     <local:Paragraph>
                         <Run Text="General info" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />
@@ -63,7 +63,7 @@ DEALINGS IN THE SOFTWARE.
             <StackPanel Margin="20,0,20,0">
                 <StackPanel Visibility="{Binding Path=TargetHasNewFlashProtocol, Converter={StaticResource InverseVisibilityConverter}}">
                     <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" VerticalScrollBarVisibility="Auto" >
-                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1">
+                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" Foreground="White">
                             <local:Paragraph TextAlignment="Left">
                                 <Run Text="Resources for boot restore" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                                 <LineBreak />
@@ -73,9 +73,9 @@ DEALINGS IN THE SOFTWARE.
                             </local:Paragraph>
                         </FlowDocument>
                     </local:FlowDocumentScrollViewerNoMouseWheel>
-                    <local:FilePicker SelectionText="Select your FFU-image..." Path="{Binding FFUPath, Mode=TwoWay}" HorizontalAlignment="Stretch"/>
+                    <local:FilePicker Foreground="White" SelectionText="Select your FFU-image..." Path="{Binding FFUPath, Mode=TwoWay}" HorizontalAlignment="Stretch"/>
                     <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" VerticalScrollBarVisibility="Auto" Visibility="{Binding Path=IsBootLoaderUnlocked, Converter={StaticResource InverseVisibilityConverter}}">
-                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1">
+                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" Foreground="White">
                             <local:Paragraph TextAlignment="Left">
                                 <LineBreak />
                                 <Run Text="You should also select a folder where you have Lumia Emergency Flash Loaders. This tool will try to select the Loader that is suitable for your phone."/>
@@ -87,7 +87,7 @@ DEALINGS IN THE SOFTWARE.
                 </StackPanel>
                 <StackPanel Visibility="{Binding Path=TargetHasNewFlashProtocol, Converter={StaticResource VisibilityConverter}}">
                     <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" VerticalScrollBarVisibility="Auto" >
-                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1">
+                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" Foreground="White">
                             <local:Paragraph TextAlignment="Left">
                                 <Run Text="Restore SecureBoot" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                                 <LineBreak />
@@ -97,7 +97,7 @@ DEALINGS IN THE SOFTWARE.
                         </FlowDocument>
                     </local:FlowDocumentScrollViewerNoMouseWheel>
                     <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" VerticalScrollBarVisibility="Auto" Visibility="{Binding Path=IsProfileFfuValid, Converter={StaticResource InverseVisibilityConverter}}">
-                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1">
+                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" Foreground="White">
                             <local:Paragraph TextAlignment="Left">
                                 <LineBreak />
                                 <Run Text="WARNING: " FontWeight="Bold" Foreground="Red" />

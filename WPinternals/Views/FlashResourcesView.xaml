@@ -36,7 +36,7 @@ DEALINGS IN THE SOFTWARE.
     <StackPanel VerticalAlignment="Center">
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,0">
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1">
+                <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" Foreground="White">
                     <local:Paragraph>
                         <Run Text="General info" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />
@@ -63,7 +63,7 @@ DEALINGS IN THE SOFTWARE.
             <StackPanel Margin="20,0,20,0">
                 <StackPanel Visibility="{Binding Path=TargetHasNewFlashProtocol, Converter={StaticResource InverseVisibilityConverter}}">
                     <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" VerticalScrollBarVisibility="Auto" >
-                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1">
+                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" Foreground="White">
                             <local:Paragraph TextAlignment="Left">
                                 <Run Text="SecureBoot Unlock V1" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                                 <LineBreak />
@@ -77,9 +77,9 @@ DEALINGS IN THE SOFTWARE.
                             </local:Paragraph>
                         </FlowDocument>
                     </local:FlowDocumentScrollViewerNoMouseWheel>
-                    <local:FilePicker SelectionText="Select your FFU-image..." Path="{Binding FFUPath, Mode=TwoWay}" HorizontalAlignment="Stretch"/>
+                    <local:FilePicker Foreground="White" SelectionText="Select your FFU-image..." Path="{Binding FFUPath, Mode=TwoWay}" HorizontalAlignment="Stretch"/>
                     <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" VerticalScrollBarVisibility="Auto" Visibility="{Binding Path=IsBootLoaderUnlocked, Converter={StaticResource InverseVisibilityConverter}}">
-                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1">
+                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" Foreground="White">
                             <local:Paragraph TextAlignment="Left">
                                 <LineBreak />
                                 <Run Text="You should also select a folder where you have Lumia Emergency Flash Loaders. This tool will try to select the Loader that is suitable for your phone."/>
@@ -89,7 +89,7 @@ DEALINGS IN THE SOFTWARE.
                     </local:FlowDocumentScrollViewerNoMouseWheel>
                     <local:FolderPicker SelectionText="Select the folder with Lumia Emergency Flash Loaders..." Path="{Binding LoadersPath, Mode=TwoWay}" HorizontalAlignment="Stretch" Visibility="{Binding Path=IsBootLoaderUnlocked, Converter={StaticResource InverseVisibilityConverter}}"/>
                     <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" VerticalScrollBarVisibility="Auto" >
-                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1">
+                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" Foreground="White">
                             <local:Paragraph TextAlignment="Left">
                                 <LineBreak />
                                 <Run Text="You can optionally select an image that contains the SBL3 partition of an engineering phone. This is for the purpose of unlocking Mass Storage Mode. This mode is not implemented in the retail versions of the SBL3 partition. You can select an " />
@@ -99,10 +99,10 @@ DEALINGS IN THE SOFTWARE.
                             </local:Paragraph>
                         </FlowDocument>
                     </local:FlowDocumentScrollViewerNoMouseWheel>
-                    <local:FilePicker SelectionText="Optionally select an FFU-image or raw image with an Engineering SBL3 partition..." AllowNull="True" Path="{Binding SBL3Path, Mode=TwoWay}" HorizontalAlignment="Stretch"/>
+                    <local:FilePicker Foreground="White" SelectionText="Optionally select an FFU-image or raw image with an Engineering SBL3 partition..." AllowNull="True" Path="{Binding SBL3Path, Mode=TwoWay}" HorizontalAlignment="Stretch"/>
                     <StackPanel Visibility="{Binding Path=IsSupportedFfuNeeded, Converter={StaticResource VisibilityConverter}}">
                         <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" VerticalScrollBarVisibility="Auto" >
-                            <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1">
+                            <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" Foreground="White">
                                 <local:Paragraph TextAlignment="Left">
                                     <LineBreak />
                                     <Run Text="The FFU-image you selected does not have a supported OS-version. Windows Phone Internals needs to extract files from a supported OS-version. You need to select such donor-FFU. If necessary, you can select an FFU-image for a different model." />
@@ -110,7 +110,7 @@ DEALINGS IN THE SOFTWARE.
                                 </local:Paragraph>
                             </FlowDocument>
                         </local:FlowDocumentScrollViewerNoMouseWheel>
-                        <local:FilePicker SelectionText="Select an FFU-image with supported OS-version..." AllowNull="False" Path="{Binding SupportedFFUPath, Mode=TwoWay}" HorizontalAlignment="Stretch"/>
+                        <local:FilePicker Foreground="White" SelectionText="Select an FFU-image with supported OS-version..." AllowNull="False" Path="{Binding SupportedFFUPath, Mode=TwoWay}" HorizontalAlignment="Stretch"/>
                         <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" VerticalScrollBarVisibility="Auto" Visibility="{Binding Path=IsSupportedFfuValid, Converter={StaticResource InverseVisibilityConverter}}">
                             <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" FontWeight="Bold" Foreground="Red">
                                 <local:Paragraph TextAlignment="Left">
@@ -123,7 +123,7 @@ DEALINGS IN THE SOFTWARE.
                 </StackPanel>
                 <StackPanel Visibility="{Binding Path=TargetHasNewFlashProtocol, Converter={StaticResource VisibilityConverter}}">
                     <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" VerticalScrollBarVisibility="Auto" >
-                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1">
+                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" Foreground="White">
                             <local:Paragraph TextAlignment="Left">
                                 <Run Foreground="#FF3753A6" FontWeight="Bold" FontSize="18" Text="SecureBoot Unlock V2"/>
                                 <LineBreak/>
@@ -156,9 +156,9 @@ DEALINGS IN THE SOFTWARE.
                             </local:Paragraph>
                         </FlowDocument>
                     </local:FlowDocumentScrollViewerNoMouseWheel>
-                    <local:FilePicker SelectionText="Select your FFU-image for profiling..." Path="{Binding ProfileFFUPath, Mode=TwoWay}" HorizontalAlignment="Stretch"/>
+                    <local:FilePicker Foreground="White" SelectionText="Select your FFU-image for profiling..." Path="{Binding ProfileFFUPath, Mode=TwoWay}" HorizontalAlignment="Stretch"/>
                     <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" VerticalScrollBarVisibility="Auto" >
-                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1">
+                        <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" Foreground="White">
                             <local:Paragraph TextAlignment="Left">
                                 <LineBreak />
                                 <Run Text="You will also need an emergency programmer for your phone."/>
@@ -166,10 +166,10 @@ DEALINGS IN THE SOFTWARE.
                             </local:Paragraph>
                         </FlowDocument>
                     </local:FlowDocumentScrollViewerNoMouseWheel>
-                    <local:FilePicker SelectionText="Select the EDE-file for your phone..." Path="{Binding EDEPath, Mode=TwoWay}" HorizontalAlignment="Stretch"/>
+                    <local:FilePicker Foreground="White" SelectionText="Select the EDE-file for your phone..." Path="{Binding EDEPath, Mode=TwoWay}" HorizontalAlignment="Stretch"/>
                     <StackPanel Visibility="{Binding Path=IsSupportedFfuNeeded, Converter={StaticResource VisibilityConverter}}">
                         <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" VerticalScrollBarVisibility="Auto" >
-                            <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1">
+                            <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" Foreground="White">
                                 <local:Paragraph TextAlignment="Left">
                                     <LineBreak />
                                     <Run Text="The FFU-image you selected for profiling does not have a supported OS-version. Windows Phone Internals needs to extract files from a supported OS-version. You need to select such donor-FFU. If necessary, you can select an FFU-image for a different model." />
@@ -177,7 +177,7 @@ DEALINGS IN THE SOFTWARE.
                                 </local:Paragraph>
                             </FlowDocument>
                         </local:FlowDocumentScrollViewerNoMouseWheel>
-                        <local:FilePicker SelectionText="Select an FFU-image with supported OS-version..." AllowNull="False" Path="{Binding SupportedFFUPath, Mode=TwoWay}" HorizontalAlignment="Stretch"/>
+                        <local:FilePicker Foreground="White" SelectionText="Select an FFU-image with supported OS-version..." AllowNull="False" Path="{Binding SupportedFFUPath, Mode=TwoWay}" HorizontalAlignment="Stretch"/>
                         <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" VerticalScrollBarVisibility="Auto" Visibility="{Binding Path=IsSupportedFfuValid, Converter={StaticResource InverseVisibilityConverter}}">
                             <FlowDocument Loaded="Document_Loaded" FontFamily="Segoe UI" FontSize="12" PagePadding="1" FontWeight="Bold" Foreground="Red">
                                 <local:Paragraph TextAlignment="Left">

@@ -38,7 +38,7 @@ DEALINGS IN THE SOFTWARE.
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20">
             <StackPanel Orientation="Vertical">
                 <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto">
-                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                         <local:Paragraph>
                             <Run Text="General info" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                             <LineBreak />
@@ -76,7 +76,7 @@ DEALINGS IN THE SOFTWARE.
                     </FlowDocument>
                 </local:FlowDocumentScrollViewerNoMouseWheel>
                 <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" Visibility="{Binding Path=SamsungWarningVisible, Converter={StaticResource VisibilityConverter}}">
-                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                         <local:Paragraph>
                             <LineBreak />
                             <local:CollapsibleRun Text="Read the " IsVisible="{Binding SamsungWarningVisible}" />
@@ -86,7 +86,7 @@ DEALINGS IN THE SOFTWARE.
                     </FlowDocument>
                 </local:FlowDocumentScrollViewerNoMouseWheel>
                 <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto">
-                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                         <local:Paragraph>
                             <LineBreak />
                             <Run Text="To let the phone go back to Windows, boot to " />
@@ -100,7 +100,7 @@ DEALINGS IN THE SOFTWARE.
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20">
             <Expander Header="Phone identity" HorizontalContentAlignment="Stretch" Template="{DynamicResource TopicExpanderTemplate}" Margin="20,0">
                 <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" VerticalScrollBarVisibility="Auto" >
-                    <FlowDocument x:Name="Document" FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                    <FlowDocument x:Name="Document" FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                         <local:Paragraph>
                             <LineBreak />
                             <Grid IsHitTestVisible="False">
@@ -124,7 +124,7 @@ DEALINGS IN THE SOFTWARE.
         </Border>
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20" >
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                     <local:Paragraph TextAlignment="Left">
                         <Run Text="Bootloader Security" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />
@@ -164,7 +164,7 @@ DEALINGS IN THE SOFTWARE.
         </Border>
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20" >
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                     <local:Paragraph TextAlignment="Left">
                         <Run Text="Secure Boot technology" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />
@@ -200,7 +200,7 @@ DEALINGS IN THE SOFTWARE.
         </Border>
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20" >
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                     <local:Paragraph TextAlignment="Left">
                         <Run Text="Hardware debugging" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />
@@ -228,7 +228,7 @@ DEALINGS IN THE SOFTWARE.
         </Border>
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" >
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                     <local:Paragraph TextAlignment="Left">
                         <Run Text="Fuse Security" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />

@@ -35,7 +35,7 @@ DEALINGS IN THE SOFTWARE.
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="0,0,0,0">
             <StackPanel>
                 <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0,20,0" VerticalScrollBarVisibility="Auto" >
-                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left">
+                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left" Foreground="White">
                         <FlowDocument.Resources>
                             <!-- This style is used to set the margins for all paragraphs in the FlowDocument to 0. -->
                             <Style TargetType="{x:Type Paragraph}">
@@ -62,15 +62,15 @@ DEALINGS IN THE SOFTWARE.
                             <LineBreak />
                             <LineBreak />
                             <local:FilePicker x:Name="EFIESPPicker" Caption="EFIESP: " SelectionText="Select the target-file for the EFIESP partition..." Path="{Binding EFIESPPath, Mode=TwoWay}" AllowNull="True" SaveDialog="True" HorizontalAlignment="Stretch" PathChanged="FilePicker_PathChanged" DefaultFileName="EFIESP.bin"/>
-                            <CheckBox x:Name="CompressEFIESP" Margin="70,5,0,0" Content="Compress EFIESP partition" IsChecked="{Binding CompressEFIESP, Mode=TwoWay}" Checked="CompressEFIESP_Changed" Unchecked="CompressEFIESP_Changed"/>
+                            <CheckBox Foreground="White" x:Name="CompressEFIESP" Margin="70,5,0,0" Content="Compress EFIESP partition" IsChecked="{Binding CompressEFIESP, Mode=TwoWay}" Checked="CompressEFIESP_Changed" Unchecked="CompressEFIESP_Changed"/>
                             <LineBreak />
                             <LineBreak />
                             <local:FilePicker x:Name="MainOSPicker" Caption="MainOS: " SelectionText="Select the target-file for the MainOS partition..." Path="{Binding MainOSPath, Mode=TwoWay}" AllowNull="True" SaveDialog="True" HorizontalAlignment="Stretch" PathChanged="FilePicker_PathChanged" DefaultFileName="MainOS.bin"/>
-                            <CheckBox x:Name="CompressMainOS" Margin="70,5,0,0" Content="Compress MainOS partition" IsChecked="{Binding CompressMainOS, Mode=TwoWay}" Checked="CompressMainOS_Changed" Unchecked="CompressMainOS_Changed"/>
+                            <CheckBox Foreground="White" x:Name="CompressMainOS" Margin="70,5,0,0" Content="Compress MainOS partition" IsChecked="{Binding CompressMainOS, Mode=TwoWay}" Checked="CompressMainOS_Changed" Unchecked="CompressMainOS_Changed"/>
                             <LineBreak />
                             <LineBreak />
                             <local:FilePicker x:Name="DataPicker" Caption="Data: " SelectionText="Select the target-file for the Data partition..." Path="{Binding DataPath, Mode=TwoWay}" AllowNull="True" SaveDialog="True" HorizontalAlignment="Stretch" PathChanged="FilePicker_PathChanged" DefaultFileName="Data.bin"/>
-                            <CheckBox x:Name="CompressData" Margin="70,5,0,0" Content="Compress Data partition" IsChecked="{Binding CompressData, Mode=TwoWay}" Checked="CompressData_Changed" Unchecked="CompressData_Changed"/>
+                            <CheckBox Foreground="White" x:Name="CompressData" Margin="70,5,0,0" Content="Compress Data partition" IsChecked="{Binding CompressData, Mode=TwoWay}" Checked="CompressData_Changed" Unchecked="CompressData_Changed"/>
                         </local:Paragraph>
                     </FlowDocument>
                 </local:FlowDocumentScrollViewerNoMouseWheel>

@@ -30,7 +30,7 @@ DEALINGS IN THE SOFTWARE.
              d:DesignWidth="700">
     <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25">
         <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0,0,0" VerticalScrollBarVisibility="Auto" >
-            <FlowDocument x:Name="Document" FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded">
+            <FlowDocument x:Name="Document" FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" Foreground="White">
                 <local:Paragraph>
                     <Run Text="Nokia Lumia - Mass Storage mode" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                     <LineBreak />

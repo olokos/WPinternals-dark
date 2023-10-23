@@ -38,10 +38,10 @@ DEALINGS IN THE SOFTWARE.
         <StackPanel>
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Margin="20,0,20,5" Height="50">
                 <local:GifImage x:Name="GifImage" Stretch="None" Margin="0,0,10,0" Visibility="Collapsed"/>
-                <Label x:Name="StatusText" Content="Waiting for connection with phone..." FontSize="20" VerticalContentAlignment="Center"/>
+                <Label Foreground="White" x:Name="StatusText" Content="Waiting for connection with phone..." FontSize="20" VerticalContentAlignment="Center"/>
             </StackPanel>
             <local:FlowDocumentScrollViewerNoMouseWheel Margin="20,0,20,0" VerticalScrollBarVisibility="Auto">
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" Foreground="White">
                     <local:Paragraph TextAlignment="Center">
                         <Run Text="When you connect the phone, it can take a moment before it is recognized. If it still isn't recognized after a while, you might need to install the necessary drivers first. For more information about the drivers, read the " />
                         <Hyperlink NavigateUri="Getting started">Getting started</Hyperlink>
@@ -50,7 +50,7 @@ DEALINGS IN THE SOFTWARE.
                 </FlowDocument>
             </local:FlowDocumentScrollViewerNoMouseWheel>
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,-20,20,0" VerticalScrollBarVisibility="Auto" Visibility="{Binding InterruptBoot, RelativeSource={RelativeSource AncestorType={x:Type local:Empty}}, Converter={StaticResource InverseVisibilityConverter}}">
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" Foreground="White">
                     <local:Paragraph TextAlignment="Center">
                         <Run Text="You can "/>
                         <Hyperlink NavigateUri="Interrupt boot">interrupt the boot-process</Hyperlink>
@@ -59,7 +59,7 @@ DEALINGS IN THE SOFTWARE.
                 </FlowDocument>
             </local:FlowDocumentScrollViewerNoMouseWheel>
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,-20,20,0" VerticalScrollBarVisibility="Auto" Visibility="{Binding InterruptBoot, RelativeSource={RelativeSource AncestorType={x:Type local:Empty}}, Converter={StaticResource VisibilityConverter}}">
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" Foreground="White">
                     <local:Paragraph TextAlignment="Center">
                         <Run Text="Windows Phone Internals is set to interrupt the boot-process as soon as the bootloader is detected. You can also allow the phone to "/>
                         <Hyperlink NavigateUri="Normal boot">boot normally</Hyperlink>

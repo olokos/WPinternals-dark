@@ -31,7 +31,7 @@ DEALINGS IN THE SOFTWARE.
     <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center">
         <Grid>
             <local:FlowDocumentScrollViewerNoMouseWheel Margin="45,25,45,75" VerticalScrollBarVisibility="Auto">
-                <FlowDocument x:Name="Document" FontFamily="Segoe UI" FontSize="12" PagePadding="0">
+                <FlowDocument x:Name="Document" FontFamily="Segoe UI" FontSize="12" PagePadding="0"  Foreground="White">
                     <local:Paragraph>
                         <Run Text="Non-disclosure agreement" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />

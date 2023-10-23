@@ -40,7 +40,7 @@ DEALINGS IN THE SOFTWARE.
             <Image Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{StaticResource LogoImageSource}" Margin="-10,0,0,0">
             </Image>
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0,0,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument x:Name="Document" FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left">
+                <FlowDocument x:Name="Document" FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left" Foreground="White" >
                     <local:Paragraph>
                         <Run Text="Windows Phone Internals" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />

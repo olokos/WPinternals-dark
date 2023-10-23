@@ -35,7 +35,7 @@ DEALINGS IN THE SOFTWARE.
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="0,0,0,25">
             <StackPanel>
                 <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0,20,0" VerticalScrollBarVisibility="Auto" >
-                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left">
+                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left" Foreground="White">
                         <FlowDocument.Resources>
                             <!-- This style is used to set the margins for all paragraphs in the FlowDocument to 0. -->
                             <Style TargetType="{x:Type Paragraph}">
@@ -68,7 +68,7 @@ DEALINGS IN THE SOFTWARE.
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center">
             <StackPanel>
                 <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0,20,0" VerticalScrollBarVisibility="Auto" >
-                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left">
+                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" TextAlignment="Left" Foreground="White">
                         <FlowDocument.Resources>
                             <!-- This style is used to set the margins for all paragraphs in the FlowDocument to 0. -->
                             <Style TargetType="{x:Type Paragraph}">

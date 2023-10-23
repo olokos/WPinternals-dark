@@ -33,7 +33,7 @@ DEALINGS IN THE SOFTWARE.
     </UserControl.Resources>
     <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center">
         <StackPanel Orientation="Vertical" Margin="50,25,50,25">
-            <TextBlock Text="{Binding Message}" FontSize="20" TextWrapping="WrapWithOverflow" />
+            <TextBlock Foreground="White" Text="{Binding Message}" FontSize="20" TextWrapping="WrapWithOverflow" />
             <TextBlock TextAlignment="Left" Text="{Binding SubMessage}" Visibility="{Binding Path=SubMessage, Converter={StaticResource ObjectToVisibilityConverter}}" Margin="0,10,0,0" TextWrapping="WrapWithOverflow" >
                 <TextBlock.Foreground>
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>

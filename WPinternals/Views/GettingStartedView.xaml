@@ -32,7 +32,7 @@ DEALINGS IN THE SOFTWARE.
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20">
             <StackPanel>
                 <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto">
-                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                         <local:Paragraph>
                             <Run Text="Getting started" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                             <LineBreak />
@@ -56,7 +56,7 @@ DEALINGS IN THE SOFTWARE.
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20">
             <StackPanel>
                 <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                    <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                         <local:Paragraph>
                             <Run Text="Supported phones" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                             <LineBreak />
@@ -152,7 +152,7 @@ DEALINGS IN THE SOFTWARE.
         </Border>
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20">
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                     <local:Paragraph>
                         <Run Text="Required Third Party Downloads" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />
@@ -264,7 +264,7 @@ DEALINGS IN THE SOFTWARE.
         </Border>
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20">
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                     <local:Paragraph>
                         <Run Text="Unlocking the bootloader" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />
@@ -370,7 +370,7 @@ DEALINGS IN THE SOFTWARE.
         </Border>
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20">
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                     <local:Paragraph>
                         <Run Text="Root Access" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />
@@ -454,7 +454,7 @@ DEALINGS IN THE SOFTWARE.
         </Border>
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20">
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                     <local:Paragraph>
                         <Run Text="Custom ROM's" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />
@@ -544,7 +544,7 @@ DEALINGS IN THE SOFTWARE.
         </Border>
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20">
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                     <local:Paragraph>
                         <Run Text="Updating your phone" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />
@@ -560,7 +560,7 @@ DEALINGS IN THE SOFTWARE.
         </Border>
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20">
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                     <local:Paragraph>
                         <Run Text="Backup" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />
@@ -582,7 +582,7 @@ DEALINGS IN THE SOFTWARE.
         </Border>
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20">
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                     <local:Paragraph>
                         <Run Text="Build and capture" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />
@@ -766,7 +766,7 @@ DEALINGS IN THE SOFTWARE.
         </Border>
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25" Margin="0,0,0,20">
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                     <local:Paragraph>
                         <Run Text="Windows 10 Mobile" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />
@@ -830,7 +830,7 @@ DEALINGS IN THE SOFTWARE.
         </Border>
         <Border BorderThickness="1" BorderBrush="#FFD4D4D4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Padding="25">
             <local:FlowDocumentScrollViewerNoMouseWheel Grid.Column="1" Margin="20,0" VerticalScrollBarVisibility="Auto" >
-                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1">
+                <FlowDocument FontFamily="Segoe UI" FontSize="12" Loaded="Document_Loaded" PagePadding="1" Foreground="White">
                     <local:Paragraph>
                         <Run Text="Known limitations" FontSize="18" FontWeight="Bold" Foreground="#FF3753A6" />
                         <LineBreak />
