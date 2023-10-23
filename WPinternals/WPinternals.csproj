@@ -30,7 +30,7 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>Heathcliff74.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>olokos.snk</AssemblyOriginatorKeyFile>
     <NoWarn>1701;1702;CA1416;RCS1090;RCS1163</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -303,13 +303,17 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>Heathcliff74.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>olokos.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <None Update="app.manifest">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Heathcliff74.snk" />
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="olokos.snk" />
     <AppDesigner Include="Properties\" />
     <EmbeddedResource Include="SB" />
     <EmbeddedResource Include="SBA" />
@@ -366,6 +370,13 @@
   <ItemGroup>
     <Folder Include="DiscUtils\DiscUtils.Core\CoreCompat\" />
     <Folder Include="DiscUtils\DiscUtils.Core\Internal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <PreBuildEvent>
